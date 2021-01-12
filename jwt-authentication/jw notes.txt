@@ -1,0 +1,26 @@
+1. create a custom middleware exclusive for validation
+    const auth = async (req, res, next) =>{
+	try{
+	const token = req.header("Authorization").replace("Bearer ", "") //get the header of the request and remove the word Bearer
+	const decoded = jwt.verify(token, "mysecretkey") //verify token with your secret key
+	const user = await User.findOne({_id: decoded._id, "tokens.token": token}) //find the associated user
+
+	if (!user){ throw new Error() } //if there is no result, throw the catch error
+
+	req.user = user //if success, show results
+	next() //call the next middleware
+	}
+
+	catch(e){
+	res.status(401).send({ error: "Pls authenticate."})
+	}
+    }
+
+2. setup a route with a custom middleware as one of the parameters dedicated for authorization
+ ex:
+    router.get("/users/me", auth, async(req, res)=>{ //auth is the custom middleware
+	res.send(req.user)
+    })
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVG9tIiwiaWF0IjoxNTk2MTAxNDYyfQ.4KI0ta7HM0lKrm4GZQqkLWnyMDmLDRnWSLG3TU-2Rf4

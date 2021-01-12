@@ -1,0 +1,10 @@
+udemy - Andrew Mead
+
+**Things to review**
+environment variable setup
+custom middleware
+jwt
+bcrypt
+pagination
+file uploads
+sending emails

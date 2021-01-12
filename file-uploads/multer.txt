@@ -1,0 +1,17 @@
+//test file uploads
+const multer = require("multer")
+
+const upload = multer({
+    dest: "avatar", 
+    limits: {
+        fileSize: 1000000 //in bytes
+    },
+    fileFilter(req, file, cb){
+        return (!file.originalname.match(/\.(doc|docx)$/)) ? //mmetch file names in the regex
+            cb(new Error("Please upload a Word document")) : cb(undefined, true);
+    }
+})
+
+router.post("/users/me/avatar", upload.single("avatar"), (req, res)=>{
+    res.send();
+});

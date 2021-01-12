@@ -1,0 +1,54 @@
+require
+Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default
+https://www.npmjs.com/package/request
+
+validator.js
+A library of string validators and sanitizers
+https://www.npmjs.com/package/validator
+
+faker
+generate massive amounts of fake data in the browser and node.js
+https://www.npmjs.com/package/faker
+
+chalk
+Terminal string styling done right
+https://www.npmjs.com/package/chalk
+
+yargs
+Yargs helps you build interactive command line tools, by parsing arguments and generating an elegant user interface
+https://www.npmjs.com/package/yargs
+
+handlebars
+Handlebars.js is an extension to the Mustache templating language created by Chris Wanstrath. Handlebars.js and Mustache are both logicless templating languages that keep the view and the code separated like we all know they should be
+
+bcrypt
+A library to help you hash passwords
+https://www.npmjs.com/package/bcrypt
+
+JWT
+Used for authorization of users
+https://www.npmjs.com/package/jsonwebtoken
+
+rando
+The world's easiest, most powerful random function
+https://randojs.com/
+
+multer
+Multer is a node.js middleware for handling multipart/form-data, which is primarily used for uploading files. It is written on top of busboy for maximum efficiency
+https://www.npmjs.com/package/multer
+
+sharp
+The typical use case for this high speed Node.js module is to convert large images in common formats to smaller, web-friendly JPEG, PNG and WebP images of varying dimensions
+https://www.npmjs.com/package/sharp
+
+send grid
+This is a dedicated service for interaction with the mail endpoint of the SendGrid v3 API.
+https://www.npmjs.com/package/@sendgrid/mail
+
+env-cmd
+A simple node program for executing commands using an environment from an env file
+https://www.npmjs.com/package/env-cmd
+
+SuperTest
+The motivation with this module is to provide a high-level abstraction for testing HTTP, while still allowing you to drop down to the lower-level API provided by superagent
+https://www.npmjs.com/package/supertest
