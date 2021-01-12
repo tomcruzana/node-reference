@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sample Website</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<style>
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333 !important;
+	}
+
+	li {
+	  float: left;
+	}
+
+	li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	li a:hover {
+	  background-color: #111;
+	}
+	</style>
+</head>
+
+<style>
+	 body{background-color: orange}
+	.container{margin: 0 auto; max-width: 400px;color: #fff; font-family: verdana;}
+</style>
+
+<body id="home">
+	<%- include("partials/navigation") %> <!--This is how you put a partial html component in ejs-->
+	<div class="container">
+		<h1>Welcome to this EJS page</h1>
+		<p>lorem ipsum dolor amet que avir enzo diez!</p>
+	</div>
+
+</body>
+</html>

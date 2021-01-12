@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sample Website</title>
+	<link rel="stylesheet" href="/assets/styles.css"> <!--static file-->
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+
+<style>
+	 body{background-color: orange}
+	.container{margin: 0 auto; max-width: 400px;color: #fff; font-family: verdana;}
+</style>
+
+<body id="home">
+	<%- include("partials/navigation") %> <!--This is how you put a partial html component in ejs-->
+	<div class="container">
+		<h1>Welcome to this EJS page</h1>
+		<p>lorem ipsum dolor amet que avir enzo diez!</p>
+		
+		<img src="/assets/ny.jpg" width="300" height="300"/> <!--static file-->
+	</div>
+	
+
+</body>
+</html>

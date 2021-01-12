@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sample Website</title>
+	<link rel="stylesheet" href="/assets/styles.css"> <!--static file-->
+	<link rel="stylesheet" href="/assets/form.css"> <!--static file-->
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+
+<style>
+	 body{background-color: orange}
+	.container{margin: 0 auto; max-width: 400px;color: #fff; font-family: verdana;}
+</style>
+
+<body id="home">
+	<%- include("partials/navigation") %> <!--This is how you put a partial html component in ejs-->
+	<h1>Thanks for submitting!</h1>
+	<p>You contacted <%= data.who %> from the <%= data.department %> department</p>
+</body>
+</html>
