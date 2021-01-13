@@ -23,7 +23,7 @@ app.get("/contact", (req, res)=>{ //plain text. use send()
 });
 
 app.get("/profile/:id", (req, res)=>{
-	res.send("This is the page with an id of " + req.params.id) //access url with a parameter. The param is represented by a semicolon :
+	res.send("This is the page with an id of " + req.params.id) //access url with a parameter. The param is represented by a colon :
 });
 
 app.get("/employees/:id", (req, res)=>{
