@@ -3,7 +3,9 @@ const express = require("express");
 const app = express();
 
 app.set("view engine", "ejs"); //tell express that we will use ejs as a template engine
-app.use("/assets", express.static("assets")); //middleware for static files. If you remove this, static file wont show on the html
+app.use("/kiki", express.static("assets")); //middleware for static files. If you remove this, static file wont show on the html. /assets is a Virtual Path Prefix
+
+//app.use(express.static('public')) will also work without a route. see https://www.tutorialspoint.com/expressjs/expressjs_static_files.htm
 
 //routes for http get requests
 app.get("/home", (req, res)=>{
